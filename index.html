@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Vector Exercise</title>
+</head>
+<body>
+    <header>
+        Created by rodrigoCodDev
+    </header>
+
+    <div>
+        <h1>Vector Exercise</h1>
+
+        <form>
+            <label for="value">Value:</label>
+            <input id="inputNumber" type="number">
+
+            <input id="btnFirst" class="btnAdd" type="button" value="List 1" onclick="addList(this.id)">
+            <input id="btnSecond" class="btnAdd" type="button" value="List 2" onclick="addList(this.id)">
+            
+            <div>
+                <select id="listFirst" name="list" size="5" onchange="selectedListFirst()">
+    
+                </select>
+
+                <select id="listSecond" name="list" size="5" onchange="selectedListSecond()">
+    
+                </select>
+            </div>
+
+            <br>
+            <input class="btnRemove" type="button" value="Remove from First List" onclick="removeListFirst()">
+            <input class="btnRemove" type="button" value="Remove from Second List" onclick="removeListSecond()">
+        </form>
+    </div>
+</body>
+</html>
